@@ -13,7 +13,7 @@ npm install
 ### 2. Configure a API
 
 1. Localize o IPv4 de sua máquina.
-2. Dentro da pasta **src/components**, procure pelas pastas **list**, **restaurants** e **trending** e, nos arquivos **index.tsx** de cada uma, substitua o ip na vatiável **localIpv4** pelo IPv4 que localizou anteriomente.
+2. Dentro da pasta **src/components**, procure pelas pastas **list**, **restaurants** e **trending** e, nos arquivos **index.tsx** de cada uma, substitua o ip dentro da variável **localIpv4** pelo IPv4 da sua máquina.
 
 ### 3. Rode a API localmente
 
