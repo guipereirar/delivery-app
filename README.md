@@ -5,6 +5,7 @@ Esse é um projeto [Expo](https://expo.dev) feito com [`create-expo-app`](https:
 ## Execução do Projeto
 
 ### 1. Instale as dependências
+Abra um terminal na pasta raiz do projeto e execute o comando:
 
 ```bash
 npm install
@@ -17,19 +18,20 @@ npm install
 
 ### 3. Rode a API localmente
 
-Abra um terminal diferente na pasta raiz do projeto e execute o comando:
+Abra um outro terminal na pasta raiz do projeto e execute o comando:
 
 ```bash
  npx json-server db.json
 ```
 
 ### 4. Rode o aplicativo
+No mesmo terminal em que instalou as dependências, execute o comando:
 
 ```bash
  npx expo start
 ```
 
-No terminal, você vai achar uma lista de opções para rodar o projeto:
+Você vai encontrar uma lista de opções para rodar o projeto:
 
 - [Build de Desenvolvimento](https://docs.expo.dev/develop/development-builds/introduction/).
 - [Emulador Android](https://docs.expo.dev/workflow/android-studio-emulator/).
