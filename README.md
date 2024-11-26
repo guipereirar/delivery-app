@@ -1,50 +1,39 @@
-# Welcome to your Expo app 👋
+# Delivery App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esse é um projeto [Expo](https://expo.dev) feito com [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+## Execução do Projeto
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Instale as dependências
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Rode o aplicativo
 
-## Learn more
+```bash
+ npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+No terminal, você vai achar uma lista de opções para rodar o projeto:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- [Build de Desenvolvimento](https://docs.expo.dev/develop/development-builds/introduction/).
+- [Emulador Android](https://docs.expo.dev/workflow/android-studio-emulator/).
+- [Simulador iOS](https://docs.expo.dev/workflow/ios-simulator/).
+- [Expo Go](https://expo.dev/go), um aplicativo criado para visualizar projetos Expo, disponível em Android e iOS.
 
-## Join the community
+Escolha o de sua preferência e siga as instruções.
 
-Join our community of developers creating universal apps.
+### 3. Configure a API
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Localize o IPv4 de sua máquina.
+2. Dentro da pasta **src/components**, procure pelas pastas **list**, **restaurants** e **trending** e, nos arquivos **index.tsx** de cada uma, substitua o ip na vatiável **localIpv4** pelo IPv4 que localizou anteriomente.
+
+### 4. Rode a API localmente
+
+Abra um terminal diferente na pasta raiz do projeto e execute o comando:
+
+```bash
+ npx json-server db.json
+```
