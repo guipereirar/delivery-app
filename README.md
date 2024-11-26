@@ -36,4 +36,4 @@ No terminal, você vai achar uma lista de opções para rodar o projeto:
 - [Simulador iOS](https://docs.expo.dev/workflow/ios-simulator/).
 - [Expo Go](https://expo.dev/go), um aplicativo criado para visualizar projetos Expo, disponível em Android e iOS.
 
-Escolha o de sua preferência e siga as instruções.
+Escolha a de sua preferência e siga as instruções.
