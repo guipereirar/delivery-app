@@ -8,11 +8,13 @@ export interface RestaurantProps {
   image: string;
 }
 
+const localIpv4 = "192.168.0.71";
+
 export function Restaurants() {
   const [restaurants, setRestaurants] = useState<RestaurantProps[]>([]);
   useEffect(() => {
     async function getRestaurants() {
-      const response = await fetch("http://192.168.0.71:3000/restaurants");
+      const response = await fetch(`http://${localIpv4}:3000/restaurants`);
       const data = await response.json();
       setRestaurants(data);
     }

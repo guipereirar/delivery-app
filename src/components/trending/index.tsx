@@ -13,12 +13,14 @@ export interface FoodProps {
   restaurantId: string;
 }
 
+const localIpv4 = "192.168.0.71";
+
 export function TrendingFoods() {
   const [foods, setFoods] = useState<FoodProps[]>([]);
 
   useEffect(() => {
     async function getFoods() {
-      const response = await fetch("http://192.168.0.71:3000/foods");
+      const response = await fetch(`http://${localIpv4}:3000/foods`);
       const data = await response.json();
       setFoods(data);
     }
